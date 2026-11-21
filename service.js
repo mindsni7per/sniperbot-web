@@ -188,6 +188,7 @@ app.get("/api/logs", requireStaff, (req, res) => {
   res.json(rows.slice(0, 300));
 });
 
-app.listen(Number(env.DASHBOARD_PORT || 8080), () => {
-  console.log(`Dashboard running on port ${env.DASHBOARD_PORT || 8080}`);
+app.listen(Number(env.PORT || env.DASHBOARD_PORT || 8080), () => {
+  console.log(`Dashboard running on port ${env.PORT || env.DASHBOARD_PORT || 8080}`);
 });
+
