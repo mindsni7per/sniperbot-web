@@ -1,1 +1,0 @@
-# sniperbot-web
